@@ -3,13 +3,13 @@
 </h1>
 I developed a <b>Markov chain-based text generation</b> model in GNU Octave, utilizing various texts to train the model for coherent text generation.
 I implemented a sliding window approach to enhance the model’s predictive capabilities by analyzing the last K tokens, allowing for context-aware word predictions.
-<h3>
+<h2>
   Text Representation Using Markov Chains
-</h3>
+</h2>
 We can conceptualize a text as a <b>sequence of events</b>, where each event(node) represents a word. For example, the text "I went to the market and the store" can be represented as a Markov chain. In this chain, even though the word "the" appears twice, it is represented once, as it signifies a single state. The Markov chain can be interpreted as follows: after "I," "went" follows; after "and," "the" follows; after "the," it can lead to "market" or "store" with equal probability.
-<h3>
+<h2>
   Method Description
-</h3>
+</h2>
 <ol>
 <li><b>Training Set:</b> This dataset is used to train the model, composed of multiple texts (e.g., Tiny Shakespeare) that help construct the Markov chain.
 </li>
