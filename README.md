@@ -10,9 +10,9 @@ I implemented a sliding window approach to enhance the model’s predictive capa
   Text Representation Using Markov Chains
 </h3>
 We can conceptualize a text as a <b>sequence of events</b>, where each event(node) represents a word. For example, the text "I went to the market and the store" can be represented as a Markov chain. In this chain, even though the word "the" appears twice, it is represented once, as it signifies a single state. The Markov chain can be interpreted as follows: after "I," "went" follows; after "and," "the" follows; after "the," it can lead to "market" or "store" with equal probability.
-<h2>
+<h3>
   Method Description
-</h2>
+</h3>
 <ol>
 <li><b>Training Set:</b> This dataset is used to train the model, composed of multiple texts (e.g., Tiny Shakespeare) that help construct the Markov chain.
 </li>
